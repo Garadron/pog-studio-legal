@@ -9,38 +9,58 @@
 <body>
 <main>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: October 1, 2026</p>
+  <p class="updated">Last updated: October 18, 2026</p>
 
   <h2>Who operates POG Studio</h2>
   <p>POG Studio is a personal tool operated by Garadron (contact:
      <a href="mailto:emmanuel.surace@gmail.com">emmanuel.surace@gmail.com</a>). It runs on the operator's own
-     computer and is used only by the operator, with the operator's own TikTok and Instagram accounts.</p>
+     computer and is used only by the operator, with the operator's own TikTok, Instagram and YouTube
+     accounts.</p>
+
+  <h2>YouTube API Services</h2>
+  <p>POG Studio uses YouTube API Services. The YouTube data it handles is also subject to the
+     <a href="http://www.google.com/policies/privacy">Google Privacy Policy</a>, and using POG Studio means
+     agreeing to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.</p>
 
   <h2>What data it accesses</h2>
   <ul>
+    <li><strong>YouTube</strong>, after the operator signs in with Google (OAuth 2.0):
+        <ul>
+          <li>with the <code>youtube.upload</code> permission, it uploads the clips the operator approves to the
+              operator's own channel as Shorts (<code>videos.insert</code>);</li>
+          <li>with the <code>youtube.readonly</code> permission, it reads the statistics (views, likes, comments)
+              and the publication date of the operator's own videos uploaded this way (<code>videos.list</code>).</li>
+        </ul>
+        It does not read or change any other channel, video, comment or account.</li>
     <li><strong>TikTok:</strong> basic account information (account identifier, display name and avatar) through the
-        <code>user.info.basic</code> permission, and permission to upload videos to the account's drafts through the
-        <code>video.upload</code> permission.</li>
-    <li><strong>Instagram:</strong> basic information about the operator's professional account and permission to
-        publish content to it.</li>
+        <code>user.info.basic</code> permission, permission to upload videos to the account's drafts through the
+        <code>video.upload</code> permission, and the list and statistics of the operator's own public videos
+        through the <code>video.list</code> permission.</li>
+    <li><strong>Instagram:</strong> basic information about the operator's professional account, permission to
+        publish content to it, and the statistics of the operator's own Reels.</li>
     <li><strong>Videos:</strong> only clips cut from the operator's own stream recordings.</li>
   </ul>
 
   <h2>How the data is used</h2>
   <p>The data is used only to upload the operator's clips to the operator's own accounts, after the operator has
-     reviewed and approved them. POG Studio does not access other users' data.</p>
+     reviewed and approved them, and to show the operator how those clips are doing. The statistics are shown only
+     to the operator, in the operator's private chat with POG Studio. POG Studio does not access other users'
+     data.</p>
 
   <h2>Where the data is stored</h2>
-  <p>Access tokens and clips are stored only on the operator's computer. POG Studio has no server and no database
-     of its own: data is sent only to the TikTok and Instagram APIs when a clip is uploaded.</p>
+  <p>Access tokens, clips and statistics are stored only on the operator's computer. POG Studio has no server and
+     no database of its own: data is exchanged only with the YouTube, TikTok and Instagram APIs. While POG Studio
+     runs, the statistics are refreshed from the APIs every 6 hours.</p>
 
   <h2>Sharing</h2>
-  <p>No data is sold, shared with third parties, or used for advertising or analytics. POG Studio uses no cookies
-     and no tracking.</p>
+  <p>No data is sold, shared with third parties, or used for advertising. POG Studio uses no cookies, no similar
+     technology and no tracking, and it does not allow third parties to serve content or advertisements.</p>
 
-  <h2>Retention and deletion</h2>
-  <p>Access tokens are kept until they expire or are revoked. Access can be revoked at any time from the TikTok or
-     Instagram account settings; the operator can delete the locally stored tokens and clips at any time.</p>
+  <h2>Retention, deletion and revoking access</h2>
+  <p>Access tokens are kept until they expire or are revoked; the operator can delete the locally stored tokens,
+     clips and statistics at any time. Access to the YouTube account can be revoked at any time from the
+     <a href="https://security.google.com/settings/security/permissions">Google security settings page</a>.
+     Access to TikTok and Instagram can be revoked from those accounts' settings.</p>
 
   <h2>Children</h2>
   <p>POG Studio is not directed at children and is used only by its adult operator.</p>
@@ -49,7 +69,7 @@
   <p>Changes to this policy will be published on this page with a new "Last updated" date.</p>
 
   <h2>Contact</h2>
-  <p>For any question about this policy, write to
+  <p>For any question or complaint about this policy or about how POG Studio uses data, write to
      <a href="mailto:emmanuel.surace@gmail.com">emmanuel.surace@gmail.com</a>.</p>
 
   <nav>
