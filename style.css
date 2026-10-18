@@ -13,3 +13,8 @@ p, li { color: var(--text); }
 a { color: var(--accent); }
 nav { border-top: 1px solid var(--line); margin-top: 40px; padding-top: 16px; color: var(--muted); }
 nav a { margin-right: 16px; }
+.youtube { display: flex; gap: 16px; align-items: flex-start; margin-top: 28px; }
+.youtube p { margin: 0; }
+/* The logo is never recolored: on a dark page it sits on white, for contrast (YouTube branding guidelines). */
+.yt-logo { flex: none; display: inline-block; background: #ffffff; padding: 8px 10px; border-radius: 6px;
+           border: 1px solid var(--line); line-height: 0; }
