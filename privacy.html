@@ -9,7 +9,7 @@
 <body>
 <main>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: October 18, 2026</p>
+  <p class="updated">Last updated: October 26, 2026</p>
 
   <h2>Who operates POG Studio</h2>
   <p>POG Studio is a personal tool operated by Garadron (contact:
@@ -28,8 +28,9 @@
         <ul>
           <li>with the <code>youtube.upload</code> permission, it uploads the clips the operator approves to the
               operator's own channel as Shorts (<code>videos.insert</code>);</li>
-          <li>with the <code>youtube.readonly</code> permission, it reads the statistics (views, likes, comments)
-              and the publication date of the operator's own videos uploaded this way (<code>videos.list</code>).</li>
+          <li>with the <code>youtube.readonly</code> permission, it reads the statistics (views, likes, comments),
+              the publication date, the title and the description of the operator's own Shorts of these clips
+              (<code>videos.list</code>).</li>
         </ul>
         It does not read or change any other channel, video, comment or account.</li>
     <li><strong>TikTok:</strong> basic account information (account identifier, display name and avatar) through the
@@ -46,6 +47,11 @@
      reviewed and approved them, and to show the operator how those clips are doing. The statistics are shown only
      to the operator, in the operator's private chat with POG Studio. POG Studio does not access other users'
      data.</p>
+  <p>YouTube statistics are shown exactly as YouTube returns them, labeled as YouTube's, and kept apart from the
+     other platforms' numbers: POG Studio never adds them to other numbers or calculates new metrics from them.
+     When the operator has rewritten a Short's title or description on YouTube, the rewritten text is kept as an
+     example of the operator's writing style for the titles POG Studio suggests next; this happens only on the
+     operator's computer, with no third-party service.</p>
 
   <h2>Where the data is stored</h2>
   <p>Access tokens, clips and statistics are stored only on the operator's computer. POG Studio has no server and
@@ -58,7 +64,11 @@
 
   <h2>Retention, deletion and revoking access</h2>
   <p>Access tokens are kept until they expire or are revoked; the operator can delete the locally stored tokens,
-     clips and statistics at any time. Access to the YouTube account can be revoked at any time from the
+     clips and statistics at any time. Data obtained from YouTube (statistics, titles and descriptions) is read
+     again every 6 hours while POG Studio runs, and is deleted if it has not been read again within 30 days. When
+     access to YouTube is revoked, POG Studio deletes all the data it obtained from YouTube at its next refresh
+     (every 6 hours while it runs, and right after it starts). Access to the YouTube account can be revoked at
+     any time from the
      <a href="https://security.google.com/settings/security/permissions">Google security settings page</a>.
      Access to TikTok and Instagram can be revoked from those accounts' settings.</p>
 
